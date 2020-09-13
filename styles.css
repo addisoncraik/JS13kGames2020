@@ -165,7 +165,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 #fox {
     image-rendering: pixelated;
             position: absolute;
-            background-image: url('imgs/FIREFOX.png');
+            background-image: url('imgs/f.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0,-30;
