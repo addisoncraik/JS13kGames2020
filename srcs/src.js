@@ -901,6 +901,7 @@ document.addEventListener("keydown", function (e) {
                 groups[4].h  = groups[5].h = 1
                 setTimeout(hasWon,700)
             }else{
+		refreshGame(200)
                 tabText = "404 Not Found"
             }
         }
