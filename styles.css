@@ -1,0 +1,163 @@
+body {
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#game, #cursorCanvas{
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 0;
+}
+
+#cursorCanvas{
+    z-index: 2;
+}
+
+#firefox, #js13k, #google{
+    position: absolute;
+    width:22px;
+    top:10;
+    left:139;
+    display: none;
+    z-index: 1;
+}
+
+#text p{
+    position: absolute;
+    margin: 0;
+    letter-spacing: .5px;
+    font-family: sans-serif;
+}
+
+#flashingCursorX{
+    opacity: 0;
+}
+
+input{
+    position: absolute;
+    z-index:3;
+    border:1px solid #56565A;
+    outline: none;
+    height: 20px;
+    padding: 5px;
+    display: none;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+    
+}
+
+.tile{
+            width:200px;
+            position: absolute;
+        }
+        #spot0{
+            top:0;
+            left:0;
+        }
+        
+        #spot1{
+            left:200px;
+            top:0;
+        }
+        
+        #spot2{
+            left:400px;
+            top:0;
+        }
+        #spot3{
+            top:200px;
+            left:0;
+        }
+        
+        #spot4{
+            left:200px;
+            top:200px;
+        }
+        
+        #spot5{
+            left:400px;
+            top:200px;
+        }
+        #spot6{
+            top:400px;
+            left:0;
+        }
+        
+        #spot7{
+            left:200px;
+            top:400px;
+        }
+        
+        #spot8{
+            left:400px;
+            top:400px;
+        }
+
+.empty button{
+    position: absolute;
+    left:-16%;
+    top:-10%;
+    background: none;
+    border: 1px solid white;
+    color:white;
+    font-size: 30px;
+    padding: 0 8px;
+    transition: .5s;
+}
+
+#refresh{
+    padding: 0 5;
+    left:-8%;
+}
+
+#wt{
+    text-align: center;
+    line-height: 60px;
+}
+
+
+.empty button:hover{
+    transform: scale(1.1);
+}
+
+        #puzzle{
+            position: absolute;
+            display: none;
+            width:600px;
+            height:600px;
+            z-index: 3;
+            left:50%;
+            top: calc(50% + 45px);
+            transform: translate(-50%,-50%);
+        }
+
+        @media screen and (max-width: 800px){
+            #puzzle{
+                left:400px;
+            }
+        }
+
+        @media screen and (max-height: 720px){
+            #puzzle{
+                top:405px;
+            }
+        }
+        
+        #example{
+            font-family: sans-serif;
+            font-size: 17px;
+            letter-spacing: .5px;
+        }
